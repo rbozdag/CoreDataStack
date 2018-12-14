@@ -4,7 +4,6 @@
 //
 //  Created by Rahmi on 13.12.2018.
 //  Copyright © 2018 rbozdag. All rights reserved.
-//     https://cocoacasts.s3.amazonaws.com/what-is-the-core-data-stack/figure-core-data-stack-1.jpg
 //
 
 import Foundation
