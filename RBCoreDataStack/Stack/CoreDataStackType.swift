@@ -33,7 +33,7 @@ class NotesCoreDataStack: CoreDataStack {
     let modelName: String = "note"
 
     lazy var model: NSManagedObjectModel = {
-        guard let url = Bundle.main.url(forResource: "note", withExtension: CoreDataStackHelper.FileExtensionOfCompiledDataModel) else {
+        guard let url = Bundle.main.url(forResource: modelName, withExtension: CoreDataStackHelper.FileExtensionOfCompiledDataModel) else {
             fatalError("unable to create url of managed object model")
         }
 
@@ -46,7 +46,7 @@ class NotesCoreDataStack: CoreDataStack {
 
     lazy var coordinator: NSPersistentStoreCoordinator = {
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
-        let storeUrl = applicationDocumentsDirectory.appendingPathComponent("note.sqlite") // location of the store
+        let storeUrl = applicationDocumentsDirectory.appendingPathComponent("\(modelName).\(CoreDataStackHelper.FileExtensionOfSqlite)") // location of the store
         do {
             try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeUrl, options: nil)
         } catch {

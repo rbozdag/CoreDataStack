@@ -10,4 +10,5 @@ import Foundation
 
 struct CoreDataStackHelper {
     static let FileExtensionOfCompiledDataModel = "momd"
+    static let FileExtensionOfSqlite = "sqlite"
 }
