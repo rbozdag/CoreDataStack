@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="NoteCollectionEntity" representedClassName="NoteCollectionEntity" syncable="YES" codeGenerationType="class">
+    <entity name="NoteCollectionEntity" representedClassName=".NoteCollectionEntity" syncable="YES" codeGenerationType="category">
         <attribute name="colorOfFlag" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
         <relationship name="collection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteCollectionEntity" inverseName="collection" inverseEntity="NoteCollectionEntity" syncable="YES"/>
         <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NoteEntity" inverseName="collection" inverseEntity="NoteEntity" syncable="YES"/>
     </entity>
-    <entity name="NoteEntity" representedClassName="NoteEntity" syncable="YES" codeGenerationType="class">
+    <entity name="NoteEntity" representedClassName=".NoteEntity" syncable="YES" codeGenerationType="class">
         <attribute name="note" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="collection" maxCount="1" deletionRule="Cascade" destinationEntity="NoteCollectionEntity" inverseName="notes" inverseEntity="NoteCollectionEntity" syncable="YES"/>
         <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NoteTagEntity" inverseName="notes" inverseEntity="NoteTagEntity" syncable="YES"/>
     </entity>
-    <entity name="NoteTagEntity" representedClassName="NoteTagEntity" syncable="YES" codeGenerationType="class">
+    <entity name="NoteTagEntity" representedClassName=".NoteTagEntity" syncable="YES" codeGenerationType="class">
         <attribute name="emoji" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="notes" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="NoteEntity" inverseName="tags" inverseEntity="NoteEntity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="NoteEntity" positionX="-246.17578125" positionY="-554.1953125" width="232.03515625" height="105"/>
         <element name="NoteCollectionEntity" positionX="-255.98046875" positionY="-284.640625" width="128" height="105"/>
+        <element name="NoteEntity" positionX="-246.17578125" positionY="-554.1953125" width="232.03515625" height="105"/>
         <element name="NoteTagEntity" positionX="-109.1875" positionY="-285.109375" width="128" height="90"/>
     </elements>
 </model>

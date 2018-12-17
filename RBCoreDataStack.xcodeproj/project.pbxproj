@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1A62A521C4047A002903E0 /* NoteCollectionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62A421C4047A002903E0 /* NoteCollectionEntity+CoreDataClass.swift */; };
+		8B1A62A921C51592002903E0 /* UIColor+IntToRgbExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62A821C51592002903E0 /* UIColor+IntToRgbExtension.swift */; };
+		8B1A62AB21C52815002903E0 /* CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62AA21C52815002903E0 /* CoreDataClass.swift */; };
 		8B93DBFE21C26D3C00E01748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93DBFD21C26D3C00E01748 /* AppDelegate.swift */; };
 		8B93DC0021C26D3C00E01748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93DBFF21C26D3C00E01748 /* ViewController.swift */; };
 		8B93DC0321C26D3C00E01748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B93DC0121C26D3C00E01748 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B1A62A421C4047A002903E0 /* NoteCollectionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteCollectionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B1A62A821C51592002903E0 /* UIColor+IntToRgbExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+IntToRgbExtension.swift"; sourceTree = "<group>"; };
+		8B1A62AA21C52815002903E0 /* CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataClass.swift; sourceTree = "<group>"; };
 		8B93DBFA21C26D3C00E01748 /* RBCoreDataStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBCoreDataStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B93DBFD21C26D3C00E01748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B93DBFF21C26D3C00E01748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,10 +47,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B1A62A321C40457002903E0 /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A62A421C4047A002903E0 /* NoteCollectionEntity+CoreDataClass.swift */,
+				8B1A62AA21C52815002903E0 /* CoreDataClass.swift */,
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+		8B1A62A621C5157A002903E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A62AC21C530B3002903E0 /* CoreData */,
+				8B1A62A721C51582002903E0 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B1A62A721C51582002903E0 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A62A821C51592002903E0 /* UIColor+IntToRgbExtension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8B1A62AC21C530B3002903E0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		8B93DBF121C26D3C00E01748 = {
 			isa = PBXGroup;
 			children = (
 				8B93DBFC21C26D3C00E01748 /* RBCoreDataStack */,
+				8B1A62A621C5157A002903E0 /* Extensions */,
 				8B93DBFB21C26D3C00E01748 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +100,7 @@
 		8B93DBFC21C26D3C00E01748 /* RBCoreDataStack */ = {
 			isa = PBXGroup;
 			children = (
+				8B1A62A321C40457002903E0 /* CoreDataClasses */,
 				8B93DC1221C26D4700E01748 /* Stack */,
 				8B93DBFD21C26D3C00E01748 /* AppDelegate.swift */,
 				8B93DBFF21C26D3C00E01748 /* ViewController.swift */,
@@ -152,9 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1A62A921C51592002903E0 /* UIColor+IntToRgbExtension.swift in Sources */,
+				8B1A62A521C4047A002903E0 /* NoteCollectionEntity+CoreDataClass.swift in Sources */,
 				8B93DC0621C26D3C00E01748 /* note.xcdatamodeld in Sources */,
 				8B93DC0021C26D3C00E01748 /* ViewController.swift in Sources */,
 				8B93DBFE21C26D3C00E01748 /* AppDelegate.swift in Sources */,
+				8B1A62AB21C52815002903E0 /* CoreDataClass.swift in Sources */,
 				8B93DC1421C26D5400E01748 /* CoreDataStackType.swift in Sources */,
 				8B93DC1621C3826100E01748 /* CoreDataStackHelper.swift in Sources */,
 			);
